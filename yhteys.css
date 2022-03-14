@@ -212,4 +212,41 @@ footer {
   .nav-active {
     transform: translateY(141%);
   }
+
+  /*TOP CONTAINER*/
+  .yhteys-top-container {
+    flex-direction: column;
+  }
+  .yhteys-top-container h1 {
+    font-size: 30px;
+  }
+  .yhteys-top-container p {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .vasen-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oikea-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*FORM LOMAKE*/
+
+  .yhteys-middle-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .yhteys-middle-container form {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
