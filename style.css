@@ -292,7 +292,7 @@ footer {
       rgb(12, 10, 3) 40%,
       rgb(75, 63, 13) 90%
     );
-    -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     width: 50%;
