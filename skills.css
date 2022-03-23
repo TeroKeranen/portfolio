@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Cinzel Decorative;
+  font-family: Alegreya;
 }
 
 
@@ -68,6 +68,7 @@ nav {
     rgb(10, 10, 10) 110%
   );
   border: 5px solid rgb(38, 53, 42);
+  
   border-radius: 10px;
 
     
@@ -75,13 +76,14 @@ nav {
 }
 .slider {
        
-    width: 900px;
+    width: 800px;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
     margin-left: 200px;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 
     
     
@@ -91,6 +93,7 @@ nav {
     width: 500%;
     height: 500px;
     display: flex;
+    
   }
   
   .slides input {
@@ -100,11 +103,13 @@ nav {
   .slide {
     width: 20%;
     transition: 2s;
+    
   }
   
   .slide img {
-    width: 800px;
+    width: auto;
     height: 500px;
+    
   }
   
   /*manual slide*/
@@ -143,6 +148,7 @@ nav {
   #radio3:checked ~ .first {
     margin-left: -40%;
   }
+ 
 
   /*Photoshop*/
   .photoshopt {
@@ -254,6 +260,7 @@ footer {
     
 
     .slider-container {
+        flex-direction: column;
         
         
         
@@ -298,4 +305,6 @@ footer {
 
     .photoshopt {
         font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
