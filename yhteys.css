@@ -60,7 +60,9 @@ nav {
 
 .yhteys-top-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 5px solid rgb(38, 53, 42);
   border-radius: 10px;
   background: linear-gradient(
@@ -72,13 +74,22 @@ nav {
 }
 .vasen-content {
   margin: 30px 10px;
+  width: 80%;
 }
+
 .vasen-content h1 {
   color: rgb(226, 181, 58);
+}
+.vasen-content p {
+  width: 50%;
+}
+.oikea-content p {
+  width: 50%;
 }
 
 .oikea-content {
   margin: 30px 10px;
+  width: 80%;
 }
 
 .oikea-content h1 {
@@ -229,6 +240,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .vasen-content h1 {
+    width: 80%;
+  }
+  .oikea-content h1 {
+    width: 80%;
   }
 
   .oikea-content {
