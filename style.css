@@ -260,6 +260,7 @@ footer {
     background-position: 80% 100%;
     background-size: 190%;
     background-repeat: no-repeat;
+    overflow-x: hidden;
   }
 
   p {
