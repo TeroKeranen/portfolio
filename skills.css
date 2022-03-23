@@ -257,7 +257,11 @@ footer {
 
     .slide img {
         width: 100%;
-        height: 400px;
+        height: 300px;
+        
+    }
+    .manual-btn {
+        border: 1px solid #40d3dc;
         
     }
 
