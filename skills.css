@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cinzel+Decorative&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cinzel Decorative;
+}
+
+
+
+p {
+  color: white;
+}
+
+/* Navigaatiopalkki */
+nav {
+  background: linear-gradient(
+    75deg,
+    rgb(5, 4, 3) 10%,
+    rgb(105, 80, 26) 30%,
+    rgb(26, 26, 34) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10px;
+  width: 100%;
+  border: 5px solid rgb(38, 53, 42);
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.burger {
+  display: none;
+}
+
+/* NAVIGAATIOPALKKI LOPPUU */
+
+/*KUVA SLIDER*/
+.slider-container {
+    display:flex;
+    background: linear-gradient(
+    75deg,
+    rgb(0, 0, 0) 1%,
+    rgb(107, 124, 108) 60%,
+    rgb(10, 10, 10) 110%
+  );
+  border: 5px solid rgb(38, 53, 42);
+  border-radius: 10px;
+
+    
+    justify-content: center;
+}
+.slider {
+    
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 200px;
+    
+    
+  }
+  
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input {
+    display: none;
+  }
+  
+  .slide {
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img {
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*manual slide*/
+  
+  .navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid #d35e10;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  .manual-btn:hover {
+    background: #40d3dc;
+  }
+  
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  
+
+/*FOOTER */
+
+footer {
+    background-color: rgb(29, 28, 28);
+    border: 5px solid rgb(38, 53, 42);
+    border-radius: 10px;
+  }
+  
+  #footer-container {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .footer-right-text h3 {
+    color: rgb(226, 181, 58);
+    margin-bottom: 30px;
+  }
+  .footer-right-text li {
+    list-style: none;
+  }
+  .footer-right-text a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-left-text h3 {
+    color: rgb(226, 181, 58);
+    margin-bottom: 30px;
+  }
+  .footer-left-text li {
+    list-style: none;
+  }
+  .footer-left-text a {
+    text-decoration: none;
+    color: white;
+  }
+
+  
+
+
+@media screen and (max-width: 600px) {
+    /* NAVIGAATIO PALKKI */
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(
+        75deg,
+        rgb(5, 4, 3) 10%,
+        rgb(105, 80, 26) 30%,
+        rgb(26, 26, 34) 100%
+      );
+      height: 520px;
+      width: 100%;
+      bottom: 918px;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(2%);
+      transition: transform 0.5s ease-in;
+      z-index: 9;
+    }
+  
+    .burger {
+      display: block;
+      z-index: 10;
+    }
+  
+    .burger div {
+      width: 39px;
+      height: 6px;
+      margin: 5px;
+      background-color: white;
+    }
+  
+    .logo {
+      font-size: 30px;
+    }
+  
+    .nav-links a {
+      font-size: 18px;
+    }
+  
+    .nav-links li {
+      margin-bottom: 30px;
+    }
+  
+    .nav-active {
+      transform: translateY(141%);
+    }
+  
+    /* NAVIGAATIOPALKKI LOPPUU */
+
+    /*slider*/
+
+    .slider-container {
+        
+
+    }
+
+    .slider {
+        width: 99%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .slides {
+        
+    }
+
+    .slide img {
+        width: 100%;
+        height: 400px;
+        
+    }
+
+    .navigation-manual {
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        justify-content: center;
+        width: 100%;
+        
+    }

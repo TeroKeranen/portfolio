@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="yhteys.css" />
+    <link rel="stylesheet" href="skills.css" />
     <title>Document</title>
   </head>
   <body>
+    <!--Navigaatio palkki-->
     <nav>
       <div class="logo"><h1>Tero Keränen</h1></div>
 
       <ul class="nav-links">
-        <li><a href="index.html">Koti</a></li>
+        <li><a href="imdex.html">Koti</a></li>
         <li><a href="#">Blogi</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="yhteys.html">Ota yhteyttä</a></li>
@@ -24,49 +25,42 @@
         <div></div>
       </div>
     </nav>
+    <!--navigaatio palkki loppuu-->
 
-    <div class="yhteys-top-container">
-      <div class="vasen-content">
-        <h1 class="otsikot">Miksi ottaa yhteyttä?</h1>
-        <p class="alateksti">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
-          cum at, beatae quaerat debitis veritatis tempora qui illo porro
-          cupiditate facere enim perspiciatis excepturi mollitia rerum ratione
-          velit itaque ipsa?
-        </p>
-      </div>
+    <!--Image slider start-->
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slides">
+          <!--Radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <!--radio button end-->
 
-      <div class="oikea-content">
-        <h1 class="otsikot">Ongelmia??</h1>
-        <p class="alateksti">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
-          cum at, beatae quaerat debitis veritatis tempora qui illo porro
-          cupiditate facere enim perspiciatis excepturi mollitia rerum ratione
-          velit itaque ipsa?
-        </p>
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="slidekuvat/kuva1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="slidekuvat/kuva22.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="slidekuvat/kuva33.png" alt="" />
+          </div>
+          <!---slide image end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
       </div>
     </div>
+    <!--image slider end-->
 
-    <div class="yhteys-middle-container">
-      <form action="#">
-        <input type="text" id="fname" name="fname" value="etunimi" />
-
-        <input type="text" id="lname" name="lname" value="sukunimi" /><br />
-
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value="email"
-          style="width: 400px"
-        /><br />
-        <label for="message">Viesti:</label><br />
-        <textarea name="message" style="width: 400px; height: 350px"></textarea
-        ><br />
-        <input type="submit" value="Submit" id="button-text" />
-      </form>
-    </div>
-
+    <!--footer alkaa-->
     <footer>
       <div id="footer-container">
         <div id="footer-left">
@@ -124,7 +118,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="java.js"></script>
+    <!--footer loppuu-->
   </body>
 </html>
