@@ -73,90 +73,99 @@ nav {
 
     
     justify-content: center;
+    flex-direction: column;
 }
-.slider {
-       
-    width: 800px;
-    height: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-left: 200px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
+img {
+  width: 400px;
+  
+}
+.siirra-container {
+  position: absolute;
+  left: -200px;
+  top: -240px;
+  
+}
 
-    
-    
-  }
+.suurenna {
   
-  .slides {
-    width: 500%;
-    height: 500px;
-    display: flex;
-    
-  }
   
-  .slides input {
-    display: none;
-  }
+  width: 700px;
   
-  .slide {
-    width: 20%;
-    transition: 2s;
-    
-  }
   
-  .slide img {
-    width: auto;
-    height: 500px;
-    
-  }
-  
-  /*manual slide*/
-  
-  .navigation-manual {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  .manual-btn {
-    border: 2px solid #d35e10;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    
-  }
-  
-  .manual-btn:not(:last-child) {
-    margin-right: 40px;
-  }
-  .manual-btn:hover {
-    background: #40d3dc;
-  }
-  
-  #radio1:checked ~ .first {
-    margin-left: 0;
-  }
-  #radio2:checked ~ .first {
-    margin-left: -20%;
-  }
-  #radio3:checked ~ .first {
-    margin-left: -40%;
-  }
+}
+
+.hidden {
+  display:none;
+}
+.hidden2 {
+  display:none;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(126, 124, 124);
+  filter: blur(8px);
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:white;
+
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
  
 
   /*Photoshop*/
   .photoshopt {
       display: flex;
       justify-content: center;
-      align-items: center;
-      color: rgb(226, 181, 58);
+      flex-direction: column;
+      
+      align-items:center;
+      margin-bottom: 40px;
       font-size: 29px;
+      
+      width: 100%;
+      
   }
   
 
