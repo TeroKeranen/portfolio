@@ -79,14 +79,17 @@ img {
   width: 400px;
   
 }
+
+/*SLIDESHOW-CONTAINERIA varten kun klikataan kuvaa*/
 .siirra-container {
   position: absolute;
   left: -200px;
   top: -240px;
   
 }
-
+/*Suurennetaan klikkaukset kuvaa*/
 .suurenna {
+  border-radius: 100px;
   
   
   width: 700px;
@@ -94,20 +97,23 @@ img {
   
 }
 
+/*Lisätään back classille hidden jota ohjataa javascriptilla */
 .hidden {
   display:none;
 }
-.hidden2 {
+
+/*Lisätään hidden2 napeille kun kuvista klikataan ja kuvat muuttuu isoksi*/
+.hidden2 {        
   display:none;
 }
 
 .back {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 500%;
   top: 0;
   left: 0;
-  background: rgb(126, 124, 124);
+  background: rgb(88, 88, 88);
   filter: blur(8px);
 }
 
@@ -159,6 +165,7 @@ img {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      color: rgb(226, 181, 58);
       
       align-items:center;
       margin-bottom: 40px;
@@ -237,7 +244,7 @@ footer {
   
     .burger {
       display: block;
-      z-index: 10;
+      z-index: 9;
     }
   
     .burger div {
@@ -245,6 +252,7 @@ footer {
       height: 6px;
       margin: 5px;
       background-color: white;
+      
     }
   
     .logo {
@@ -276,44 +284,56 @@ footer {
 
     }
 
-    .slider {
-        width: 99%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        
-        
+    .slideshow-container {
+      
+      width: 100%;
+      margin-bottom: 30px;
+      
+
+    }
+    .mySlides img {
+     
+      display:flex;
+      z-index: 10;
+      
     }
 
-    .slide {
-        
-        
+    .suurenna {
+      width: 100%;;
     }
 
-    .slide img {
-        width: 100%;
-        height: 300px;
-        
-    }
-    .manual-btn {
-        border: 1px solid #40d3dc;
-        margin-bottom: 50px;
-        
+    .siirra-container {
+      
+      left: 0;
     }
 
-    .navigation-manual {
-        position: relative;
-        display: flex;
-        align-items: center;
-        
-        justify-content: center;
-        width: 100%;
-        
+    .back {
+      z-index: 0;
+      height: 500%;
+      
+      
     }
+
+    img {
+      
+      width: 70%;
+      margin: auto;
+      
+      
+    }
+
+    
+
+    
 
     .photoshopt {
         font-size: 20px;
         margin-top: 30px;
         margin-bottom: 30px;
+        margin-bottom: 30px;
+        color: rgb(226, 181, 58);
+    }
+
+    .photoshopt p {
+      width: 70%;
     }

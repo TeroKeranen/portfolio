@@ -38,7 +38,7 @@ function showSlides(n) {
 }
 
 const kuvat = document.querySelectorAll(".mySlides");
-const image = document.querySelector("img");
+
 const overlay = document.querySelector(".back");
 
 for (let i = 0; i < kuvat.length; i++) {
@@ -47,14 +47,17 @@ for (let i = 0; i < kuvat.length; i++) {
     const container = document.querySelector(".slideshow-container");
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
+    const ham = document.querySelector(".burger");
 
     for (let x = 0; x < image.length; x++) {
       container.classList.toggle("siirra-container");
       next.classList.toggle("hidden2");
       prev.classList.toggle("hidden2");
+      ham.classList.toggle("hidden2");
 
       image[x].classList.toggle("suurenna");
       overlay.classList.toggle("hidden");
+      ham.style.zIndex = "0";
     }
   });
 }
