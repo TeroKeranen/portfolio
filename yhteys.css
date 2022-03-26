@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Cinzel Decorative;
+  font-family: Alegreya;
 }
 
 p {
@@ -49,6 +49,9 @@ nav {
   color: white;
   font-size: 25px;
 }
+.nav-links a:hover {
+  text-shadow: 20px 20px 10px black;
+}
 
 .burger {
   display: none;
@@ -60,7 +63,7 @@ nav {
 
 .yhteys-top-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 5px solid rgb(38, 53, 42);
@@ -72,6 +75,17 @@ nav {
     rgb(10, 10, 10) 110%
   );
 }
+
+.yhteys-left-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+}
+
+.yhteys-right-container img {
+  width: 500px;
+}
 .vasen-content {
   margin: 30px 10px;
   width: 80%;
@@ -82,6 +96,7 @@ nav {
 }
 .vasen-content p {
   width: 50%;
+  font-size: 20px;
 }
 .oikea-content p {
   width: 50%;
@@ -94,44 +109,6 @@ nav {
 
 .oikea-content h1 {
   color: rgb(226, 181, 58);
-}
-
-.yhteys-middle-container {
-  border: 5px solid rgb(38, 53, 42);
-  border-radius: 10px;
-  background: linear-gradient(
-    75deg,
-    rgb(0, 0, 0) 1%,
-    rgb(107, 124, 108) 60%,
-    rgb(10, 10, 10) 110%
-  );
-  padding: 50px;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-
-  margin-top: 30px;
-}
-.yhteys-middle-container form {
-  margin-left: 100px;
-}
-
-#button-text {
-  width: 200px;
-  height: 100px;
-  border: 1px solid white;
-  background-color: transparent;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-#button-text:hover {
-  background-color: aqua;
-  color: black;
-  transition: background-color 0.5s ease-in;
 }
 
 /* FOOTER */
@@ -236,10 +213,18 @@ footer {
     width: 80%;
   }
 
+  .yhteys-left-container {
+    width: 100%;
+  }
+
   .vasen-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+  .vasen-content p {
+    font-size: 25px;
   }
   .vasen-content h1 {
     width: 80%;

@@ -1,3 +1,4 @@
+// Media hampurilaisen javascript
 const slideIt = function () {
   const nav = document.querySelector(".nav-links");
   const ham = document.querySelector(".burger");
@@ -40,15 +41,17 @@ function showSlides(n) {
 const kuvat = document.querySelectorAll(".mySlides");
 
 const overlay = document.querySelector(".back");
+const image = document.querySelectorAll("img");
+const ham = document.querySelector(".burger");
 
+// Loopataan kuvat jotta niitä voi selata
 for (let i = 0; i < kuvat.length; i++) {
   kuvat[i].addEventListener("click", function () {
-    const image = document.querySelectorAll("img");
     const container = document.querySelector(".slideshow-container");
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
-    const ham = document.querySelector(".burger");
 
+    // Loopataan kuvat jotta niitä voi suurentaa
     for (let x = 0; x < image.length; x++) {
       container.classList.toggle("siirra-container");
       next.classList.toggle("hidden2");

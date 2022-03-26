@@ -51,6 +51,9 @@ nav {
   color: white;
   font-size: 25px;
 }
+.nav-links a:hover {
+  text-shadow: 20px 20px 10px black;
+}
 
 .burger {
   display: none;
@@ -77,6 +80,7 @@ nav {
 }
 img {
   width: 400px;
+  margin-bottom: 40px;
   
 }
 
@@ -93,6 +97,7 @@ img {
   
   
   width: 700px;
+  
   
   
 }
@@ -114,13 +119,14 @@ img {
   top: 0;
   left: 0;
   background: rgb(88, 88, 88);
-  filter: blur(8px);
+  filter: blur(0px);
 }
 
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
+  
 
 }
 
@@ -173,6 +179,89 @@ img {
       
       width: 100%;
       
+  }
+  .photoshopt p {
+    width: 60%;
+  }
+
+  /*programm skills*/
+
+  .programm-skills {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+
+    background: linear-gradient(
+    75deg,
+    rgb(0, 0, 0) 1%,
+    rgb(107, 124, 108) 60%,
+    rgb(10, 10, 10) 110%
+  );
+  border: 5px solid rgb(38, 53, 42);
+  
+  border-radius: 10px;
+    
+    
+    
+
+  }
+
+  .html-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    
+    color: rgb(226, 181, 58);
+    margin: 30px 0;
+    font-size: 28px;
+    
+
+  }
+  .html-skills p {
+    margin-top: 20px;
+    width: 60%;
+    font-size: 24px;
+    
+  }
+  .js-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin: 30px 0;
+    font-size: 28px;
+    
+    color: rgb(226, 181, 58);
+  }
+
+  .js-skills p {
+    margin-top: 20px;
+    width: 60%;
+    font-size: 24px;
+  }
+  .sql-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin: 30px 0;
+    font-size: 28px;
+    
+    color: rgb(226, 181, 58);
+  }
+
+  .sql-skills p{
+    margin-top: 20px;
+    width: 60%;
+    font-size: 24px;
   }
   
 
@@ -336,4 +425,20 @@ footer {
 
     .photoshopt p {
       width: 70%;
+    }
+
+    .programm-skills {
+      flex-direction: column;
+    }
+
+    .html-skills {
+      width: 100%;
+    }
+
+    .js-skills {
+      width: 100%;
+    }
+
+    .sql-skills {
+      width: 100%;
     }
