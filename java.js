@@ -10,7 +10,7 @@ const slideIt = function () {
 
 slideIt();
 
-// SKILLS SIVUN JAVAT
+// SKILLS SIVUN JS
 let slideIndex = 1;
 showSlides(slideIndex);
 
